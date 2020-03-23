@@ -1,0 +1,8 @@
+{
+  "name": "typescript-script-template",
+  "version": "1.0.0",
+  "description": "An opinionated template for writing scripts using Typescript",
+  "main": "index.js",
+  "author": "Luke Hansford",
+  "license": "MIT"
+}

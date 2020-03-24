@@ -4,6 +4,7 @@ module.exports = {
     "@babel/typescript"
 	],
 	"plugins": [
-			"@babel/proposal-object-rest-spread"
+			"@babel/proposal-object-rest-spread",
+			"@babel/plugin-transform-async-to-generator"
   ],
 }

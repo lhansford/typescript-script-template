@@ -6,15 +6,16 @@
   "author": "Luke Hansford",
   "license": "MIT",
   "scripts": {
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "yarn type-check -- --watch",
     "build": "yarn build:types && yarn build:js",
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline --ignore **/*.test.ts",
     "lint": "node_modules/eslint/bin/eslint.js src --ext .js,.ts",
     "lint:fix": "yarn lint --fix",
+    "start": "yarn build && node dist/index.js",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

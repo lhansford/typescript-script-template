@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 import inquirer from 'inquirer';
 
 import { getMessage } from './utils';

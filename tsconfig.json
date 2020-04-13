@@ -7,8 +7,9 @@
 		"strict": true,
 		"isolatedModules": true,
     "esModuleInterop": true,
-    "outDir": "./dist",
-    "module": "ESNext"
+    "module": "ESNext",
+    "declarationDir": "./dist",
+    "noEmit": true
 	},
 	"include": [
     "src/**/*"

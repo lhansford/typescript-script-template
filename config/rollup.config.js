@@ -1,6 +1,5 @@
 import resolve from '@rollup/plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript2';
-import babel from 'rollup-plugin-babel';
+import typescript from '@rollup/plugin-typescript';
 import commonjs from '@rollup/plugin-commonjs';
 import { preserveShebangs } from 'rollup-plugin-preserve-shebangs';
 import json from '@rollup/plugin-json';
@@ -22,11 +21,6 @@ export default {
     json(),
     commonjs(),
     preserveShebangs(),
-    typescript({ emitDeclarationOnly: true }),
-    babel({
-      exclude: 'node_modules/**',
-      include: ['src/**/*'],
-      extensions,
-    }),
+    typescript(),
   ],
 };
